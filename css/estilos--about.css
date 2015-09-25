@@ -1,0 +1,2 @@
+@import url("estilos.css");
+.about--elvis{padding:1em 2em}.bio--parrafo{max-width:50%;display:inline-block;vertical-align:top;}.bio--parrafo li{margin-left:2em}.bio--titulo{display:inline-block}.foto--elvis{display:inline-block;position:relative;margin:0;}.foto--elvis img{width:320px}.foto--elvis span{position:absolute;top:-10px;right:0;font-size:20px;color:$azulBase}header{text-align:center;}header a{font-size:28px;}header a:nth-child(1){color:#000;border-right:3px solid #000;padding-right:3px}.skills{height:300px;}.skills img{height:100%}
