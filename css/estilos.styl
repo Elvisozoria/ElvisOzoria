@@ -1,0 +1,316 @@
+@import 'nib/vendor'
+
+$azulBase = #3498db
+$azulFondo= lighten($azulBase,20%)
+$naranja1= #f6921d
+$grisFondo= #F5F5F5
+
+vendor-prefixes= o ms moz webkit official 
+
+	// -webkit-transition: all 1s ease-in-out
+	// -moz-transition: all 1s ease-in-out
+	// -o-transition: all 1s ease-in-out
+	// transition: all 1s ease-in-out
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?-yp3tce');
+	src:url('../fonts/icomoon.eot?#iefix-yp3tce') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?-yp3tce') format('woff'),
+		url('../fonts/icomoon.ttf?-yp3tce') format('truetype'),
+		url('../fonts/icomoon.svg?-yp3tce#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	text-decoration: none;
+	color: black;
+
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;	
+}
+
+
+.icon-fb:before {
+	content: "\ea8d";
+
+}
+
+.icon-tw:before {
+	content: "\ea92";
+}
+
+
+body
+	background $grisFondo
+	-webkit-transition: all 1s ease-in-out
+	-moz-transition: all 1s ease-in-out
+	-o-transition: all 1s ease-in-out
+	transition: all 1s ease-in-out
+	
+#contactoBtn
+	display block
+	position absolute
+	width 300px
+	height 300px
+	// background white
+	
+.contactoForm
+	width 300px
+	height 300px
+	line-height 1em
+	color white
+	font-weight 700
+	position relative
+	.btn-contacto
+		right 0
+		margin 0
+		padding 1.8em 1.5em
+		position absolute
+		z-index 10
+		&:hover
+			background $naranja1
+	h3
+		height 20px
+	.icon-close
+		color white
+		font-size 30px
+		position absolute
+		top -23px
+		right 5px
+	span
+		background $naranja1
+		color white
+	#nombre,#correo,#mensaje
+		margin .5em 0
+		text-align left
+		border-radius 5px
+		// display inline-block
+	#mensaje
+		width 98%
+	#nombre, #correo
+		float left
+	p
+		color white !important
+		margin 0
+	
+	form
+		margin-top 0.3em
+		
+
+.dividePantalla
+	// background url(../img/elvis.png) no-repeat center bottom
+	text-align center
+	position relative
+	min-height 600px
+	width 100%
+	padding 0
+	.foto
+		position absolute
+		bottom -4px
+		left 50%
+		margin-left -185px
+		z-index 3
+	.mitad
+		display inline-block
+		min-height 600px
+		width 50%
+		.trabajar-contenido,.blog-contenido 
+			padding 3em 2em 2em 2em
+			h4
+				font-size 30px
+				max-width 535px
+			p
+				margin-top 6em
+				font-size 18px
+			
+	.trabajar
+		position relative
+		float left
+		background $azulBase
+		color white
+		.boton:hover
+			background $naranja1
+		
+
+		
+	.blog
+		position relative
+		background $naranja1
+		float right
+		color white
+		.boton:hover
+			background $azulBase
+.emaillist
+	background black
+	// height 200px 
+	text-align center
+	color white
+	font-weight 700
+	padding 2em 0
+	
+	h2
+		margin 0
+		padding-top .5em
+	.boton
+		 margin 20px
+		 font-size 20px
+	#nombre,#correo,#boton
+		border-radius 5px
+		display block
+		padding .5em 1em
+		text-align center
+		margin auto
+	.enviarCorreo
+		width 200px
+
+		
+			
+.menuAbajo
+	background black
+	min-height 300px
+	padding 0.2em 7em
+	text-align center
+	p
+		font-size 12px
+		color lighten(gray, 30%)
+	&-item
+		background rgba(grey,0.2)
+		display inline-block
+		min-width 300px
+		min-height 300px
+		position relative
+		margin 0.5em
+		line-height 150px
+		color white
+		font-weight 700
+		text-decoration none
+		img
+			position absolute
+			top 50%
+			left 50%
+			margin -20px 0 0 -15px
+		&:hover
+			background rgba(grey,0.8)
+
+
+		
+			
+.testimonios
+	min-height 300px
+	text-align center
+	&-item
+		// background rgba($azulFondo,0.5)
+		max-width 30%
+		min-width 200px
+		display inline-block
+		margin 1em  
+		padding 0.5em 1em 1em 1em
+		text-align center
+		background white
+		img
+			border-radius 50%
+			width 100px	
+		span
+			display inline-block
+			color white
+			color $azulBase 
+		p
+			vertical-align top
+			max-width 280px
+			font-weight 700
+			margin 0.5em 0 0 .5em
+			color #666
+		&-nombre
+			margin 0
+			color $azulBase 
+			
+			
+
+
+//oocss clases
+.animado
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+
+.boton
+	background white
+	display inline-block
+	margin-top 4em
+	box-shadow 1px 1px 3px black
+	color black
+	padding 1.3em 2.2em
+	text-decoration none
+	border-radius 6px
+	letter-spacing .75px
+	font-weight 700
+	z-index -99
+		
+.fondoAzul
+	background $azulBase
+	&:hover
+		background $azulBase
+		
+
+.invisible
+	display none
+
+.temblar:hover
+	animation temblar .8s 3
+	
+.shake
+	animation shake 1.5s 5
+    
+.verde
+	background green
+	
+.rojo
+	background #D32F2F
+
+
+///Animaciones
+
+
+@keyframes temblar {
+	0%, 20%, 40%,60%,80%,100%{ transform: rotate(0deg); }
+	10%, 50%, 90%{ transform: rotate(10deg);    transform: scale(1.1); background $azulBase;}
+	30%,50%,70%{ transform: rotate(-10deg); }
+}
+
+@keyframes shake {
+    0%, 100% {transform: translateX(0);}
+    10%,  50%,  90% {transform:rotate(5deg);}
+    30%,70%{transform: rotate(-5deg)}
+    20%,  60%{transform: translateX(5px);}
+    40%,80%{transform: translateX(-5px);}
+}
+
+
+//breakpoints
+@media(max-width:900px)
+	.dividePantalla .mitad 
+		.trabajar-contenido,.blog-contenido
+			 p
+				margin-top 3em
+		
+		
+@media(max-width:750px)
+	.dividePantalla .mitad
+		width 100%
+		min-height 400px
+		overflow hidden
+		
+	.foto
+		display none
