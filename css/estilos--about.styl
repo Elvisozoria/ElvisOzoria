@@ -3,20 +3,10 @@
 
 a
 	color black
-
-.sieteCosas
-	background #3498db
-	padding 2em
-	text-align center
-	h3
-		font-size 32px
 	
-	ol
-		margin auto
-		display inline-block
-		text-align left
-	li
-		font-weight 900
+
+
+
 			
 		
 
@@ -31,6 +21,9 @@ a
 		display inline-block
 		margin-left 2em
 		margin 0.5em 1em
+	&--titulo
+		max-width 700px
+	
 		
 .blog--
 	&contenido
@@ -48,7 +41,6 @@ a
 
 .foto--elvis
 	display inline-block
-	position relative
 	margin 0
 	img
 		width 320px
@@ -66,7 +58,24 @@ header
 		&:nth-child(2)
 			color #f6921d			
 			
-			
+.sieteCosas
+	background #3498db
+	padding 2em
+	text-align center
+	h3
+		font-size 32px
+	
+	ol
+		margin auto
+		display inline-block
+		text-align left
+	li
+		font-weight 900
+.sinSerifa
+	li
+		max-width 1000px
+		margint-top 0.8px
+		
 .skills
 	display none
 	height 300px
@@ -78,21 +87,40 @@ header
 
 //OOcssClases
 
-.tachado
-	color #666
-	text-decoration line-through
+.boton
+	margin 1em auto
+	&#trabajemos,&#entrarAlBlog
+		color white
+	&#entrarAlBlog
+		margin-left -67px
+		left 50%
+		position absolute
 	
 .sinSerifa
 	font-family: 'EB Garamond', sans-serif;
 	font-size 20px
 	line-height 1.5em
-	
-.boton
-	margin 1em auto
-	&#trabajemos,&#entrarAlBlog
-		color white
+.resaltado--azul
+	background lighten(#3498db,20%)
+.tachado
+	color #666
+	text-decoration line-through
+	font-weight 300
 
 .posdata
 	line-height 1
 	font-size 16px
 	margin 0
+	text-align center
+	
+
+@media(max-width:750px)
+	.foto--elvis
+		width 40%
+		img
+			width 100%
+@media(max-width:450px)
+	.foto--elvis
+		display none
+	.bio--contenido
+		max-width 100%
