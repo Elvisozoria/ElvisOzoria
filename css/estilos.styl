@@ -1,5 +1,5 @@
-@import 'nib/vendor'
 @import 'normalize.css'
+
 
 $azulBase = #3498db
 $azulFondo= lighten($azulBase,20%)
@@ -148,6 +148,18 @@ body
 		color white
 		.boton:hover
 			background $azulBase
+.introduccion
+	article
+		background white
+		padding 2em
+		margin 4em
+	a
+		color $azulBase
+		max-width 200px	
+		font-size 32px
+		&:hover
+			color $naranja1
+	
 .emaillist
 	background black
 	// height 200px 
@@ -214,7 +226,7 @@ body
 		margin 1em  
 		padding 0.5em 1em 1em 1em
 		text-align center
-		background white
+		// background white
 		img
 			border-radius 50%
 			width 100px	
@@ -275,6 +287,28 @@ body
 	
 .rojo
 	background #D32F2F
+
+.sinSerifa
+	font-family: 'EB Garamond', sans-serif;
+	font-size 20px
+	line-height 1.5em
+.resaltado--azul
+	background lighten(#3498db,20%)
+	display inline-block
+.tachado
+	color #666
+	text-decoration line-through
+	font-weight 300
+
+.posdata
+	line-height 1
+	font-size 16px
+	margin 0
+	text-align center
+	
+	
+.subrayado
+	text-decoration underline
 
 
 ///Animaciones

@@ -8,6 +8,7 @@ $enviarCorreo= $("#enviarCorreo");
 $contactoBtn= $("#contactoBtn");
 $contactoForm= $("#contactoForm");
 $contactoClose= $(".icon-close");
+$cargarMas= $("#cargarmas");
 
 $btnsi.on("click",function(e){
 
@@ -16,6 +17,14 @@ $btnsi.on("click",function(e){
 	$formularioCorreo.removeClass("invisible");
 	$preguntaCorreo.addClass("invisible");
 });
+
+$cargarMas.on("click",function(e){
+	e.preventDefault();
+	$(".cargarmasContainer").append("<div class='nohaymas '><p>Ups, parece que no hay nada mas por aqui</p><p>Escribe aqui tu correo y seras el primero en saber cuando haya cosas nuevas aqui!</p><input type='mail' placeholder='Ej: holasoyjuan@hotmail.com'><a href='#' class='boton' id='primeroensaber'>Quiero ser el primero en saber cuando haya algo nuevo</a></div>");
+	$cargarMas.hide();
+	$(".cargarmasContainer img").hide();
+
+})
 
 $enviarCorreo.on('click',function(e){
 

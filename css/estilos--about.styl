@@ -1,4 +1,4 @@
-@import url('estilos.css')
+@import 'estilos.styl'
 
 
 a
@@ -6,9 +6,9 @@ a
 	
 
 
-
+.about--elvis
+	padding-top 2em
 			
-		
 
 .bio
 	&--contenido
@@ -30,14 +30,18 @@ a
 		margin-left 2.5em
 	&diferencias
 		margin-left 2em
+		margin-bottom 10em
 		li
 			margin-left 1em
+		.boton
+			z-index 2
 	&titulo
 		font-size 26px
 		margin-left 1em
 
 	&correo
 		background #fff
+		text-align center
 
 .foto--elvis
 	display inline-block
@@ -48,15 +52,19 @@ a
 
 header
 	text-align center
-	margint-top 0.6em
+	margint 2em
 	a
 		font-size 28px
-		&:nth-child(1)
+		&:nth-child(2)
 			color #3498db
 			border-right 3px solid black
 			padding-right 3px 
-		&:nth-child(2)
-			color #f6921d			
+		&:nth-child(3)
+			color #f6921d		
+.menuAbajo--topTrigger
+	position absolute
+	right 1em
+	top .4em	
 			
 .sieteCosas
 	background #3498db
@@ -96,22 +104,7 @@ header
 		left 50%
 		position absolute
 	
-.sinSerifa
-	font-family: 'EB Garamond', sans-serif;
-	font-size 20px
-	line-height 1.5em
-.resaltado--azul
-	background lighten(#3498db,20%)
-.tachado
-	color #666
-	text-decoration line-through
-	font-weight 300
 
-.posdata
-	line-height 1
-	font-size 16px
-	margin 0
-	text-align center
 	
 
 @media(max-width:750px)
