@@ -1,1 +1,28 @@
 @import 'estilos.styl'
+
+.fondo
+	width 100%
+	height 400px
+	background $azulFondo
+	background url('../img/247H.jpg') center center no-repeat
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+
+.menuAbajo--topTrigger
+	position absolute
+	top 10px
+	right 10px
+.contenido
+	padding 1em 2em
+	max-width 690px
+	margin 0 auto
+
+
+//break points
+@media (min-width:500px)
+	.fondo
+		background url('../img/247H-big.jpg') center center no-repeat
+		
