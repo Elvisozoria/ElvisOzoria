@@ -32,9 +32,9 @@ a
 		
 .blog--
 	&contenido
-		margin-left 2.5em
+		margin 1em
 	&diferencias
-		margin-left 2em
+		margin 1em
 		margin-bottom 10em
 		li
 			margin-left 1em
@@ -45,8 +45,29 @@ a
 		margin-left 1em
 
 	&correo
-		background #fff
+		background black
+		color white
+		padding 1em 0
 		text-align center
+		h3
+			color  $azulFondo
+			font-size 36px
+			max-width 650px
+		p
+			max-width 260px
+			font-size 24px
+		label
+			display block 
+		input
+			margin 0.5em auto	
+			&[type='submit']
+				background $naranja1
+				padding 1em
+				box-shadow 2px 2px 20px		
+#mc_embed_signup
+	background $azulBase
+	display inline-block
+
 
 .foto--elvis
 	display inline-block
