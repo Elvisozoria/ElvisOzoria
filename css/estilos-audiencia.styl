@@ -1,0 +1,203 @@
+@import 'normalize.css'
+
+
+$azul=#3498db
+$naranja1= #f6921d
+
+@font-face {
+    font-family: 'icomoon';
+    src:    url('fonts/icomoon.eot?vn0u6b');
+    src:    url('fonts/icomoon.eot?vn0u6b#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?vn0u6b') format('truetype'),
+        url('fonts/icomoon.woff?vn0u6b') format('woff'),
+        url('fonts/icomoon.svg?vn0u6b#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-check:before {
+    content: "\e908";
+    color green
+}
+.icon-spinner9:before {
+    content: "\e903";
+}
+.icon-cross:before {
+    content: "\e904";
+    color red
+}
+.icon-arrow-left:before {
+    content: "\e905";
+}
+.icon-youtube2:before {
+    content: "\e906";
+}
+.icon-linkedin2:before {
+    content: "\e907";
+}
+.icon-menu:before {
+    content: "\e901";
+}
+.icon-twitter:before {
+    content: "\e902";
+}
+.icon-facebook:before {
+    content: "\e900";
+}
+
+
+
+body
+	background white
+.aprenderas
+	margin-top 1em
+	li
+		background url("img/icon_list.png") left no-repeat
+		padding-left 35px
+		line-height 1.5
+.contenido
+	margin 0 auto
+	max-width 690px
+	.usuario 
+		display inline-block
+		width 45%
+	.usuario--negativo
+		vertical-align top
+		display inline-block
+		width 45%
+		border-left 1px solid grey
+	li
+		line-height 1.5
+		font-size 1.5em
+.correo
+	text-align center
+	background $azul
+	padding 2.5em 0
+	position relative
+	#mc_embed_signup
+		// width 400px
+		padding 1em
+		text-align center
+		display inline-block
+
+		#mc-embedded-subscribe
+			padding 1em
+		.subencabezado
+			font-size 26px
+			margin 0 0 1.5em 0
+			display block 
+			color white
+		.encabezado
+			color $naranja1
+			font-size 46px
+			display block 
+			margin-bottom 0
+				
+		input
+			text-align center
+			margin .5em
+			transition: all 1.5s ease;
+			-moz-transition: all 1.5s ease;
+			-o-transition: all 1.5s ease;
+			-webkit-transition: all 1.5s ease;
+			&[type="submit"]
+				background $naranja1
+				border 1px solid $naranja1
+				&:hover
+					background green
+					box-shadow 2px 2px 12px
+					border 1px solid green
+					
+			&[type="email"]:hover,&[type="email"]:focus
+				border-radius 50px
+				width 300px
+				box-shadow 2px 2px 2px
+	.flecha--abajo {
+	    width:0px;
+	    height:0px;
+	    border-left:60px solid transparent; /* izquierda flecha */
+	    border-right:60px solid transparent; /* derecha flecha */
+	    border-top:60px solid #fff; /* base flecha y color*/
+	    font-size:0px;
+	    line-height:0px;
+	    
+	    position absolute
+	    top 0
+	    left 50%
+	    margin-left -60px
+	}
+
+header 
+	background $azul
+	.fondo
+		width 100%
+		margin -4px
+		img
+			width 100%
+	.puv
+		margin 1em
+		text-align center
+		font-size 48px
+		color whitesmoke
+		display inline-block
+		span
+			color $naranja1
+			font-size 58px
+			
+	
+.tema
+	text-align center
+	h2
+		margin 1em
+		font-size 46px
+
+
+ul
+	list-style none
+	
+.preCorreo
+	display block
+	position relative
+	h2
+		text-align center
+		margin 4em auto
+		padding 1em
+		display block !important
+		font-size 36px
+		font-weight 700
+		color white
+	
+	.flecha--abajo {
+	    width:0px;
+	    height:0px;
+	    border-left:60px solid transparent; /* izquierda flecha */
+	    border-right:60px solid transparent; /* derecha flecha */
+	    border-top:60px solid $azul; /* base flecha y color*/
+	    font-size:0px;
+	    line-height:0px;
+	    
+	    position absolute
+	    bottom -60px
+	    left 50%
+	    margin-left -60px
+	}
+
+
+//OOCSS
+.resaltado--azul
+	background $azul
