@@ -126,8 +126,10 @@ body {
   box-shadow: 2px 2px 12px;
   border: 1px solid #008000;
 }
-.correo #mc_embed_signup input[type="email"]:hover,
-.correo #mc_embed_signup input[type="email"]:focus {
+.correo #mc_embed_signup input[type="email"] {
+  margin-bottom: 1em;
+}
+.correo #mc_embed_signup input[type="email"][type="email"]:focus {
   border-radius: 50px;
   width: 300px;
   box-shadow: 2px 2px 2px;
