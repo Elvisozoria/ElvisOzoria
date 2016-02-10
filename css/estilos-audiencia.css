@@ -64,15 +64,20 @@ body {
   margin: 0 auto;
   max-width: 690px;
 }
+.contenido h3 {
+  text-align: center;
+}
 .contenido .usuario {
   display: inline-block;
   width: 45%;
+  padding: 0.2em;
 }
 .contenido .usuario--negativo {
   vertical-align: top;
   display: inline-block;
   width: 45%;
   border-left: 1px solid #808080;
+  padding: 0.2em;
 }
 .contenido li {
   line-height: 1.5;
@@ -173,6 +178,7 @@ header .puv span {
 }
 ul {
   list-style: none;
+  padding: 0;
 }
 .preCorreo {
   display: block;
