@@ -578,6 +578,7 @@ a {
   background: #f6921d;
   padding: 1em;
   box-shadow: 2px 2px 20px;
+  border: #f6921d 1px;
 }
 #mc_embed_signup {
   background: #3498db;

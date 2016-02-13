@@ -519,7 +519,7 @@ body {
   position: absolute;
   top: 0;
 }
-article {
+form {
   background: rgba(225,225,225,0.1);
   color: #fff;
   left: 40%;
@@ -530,19 +530,20 @@ article {
   top: 10%;
   z-index: 200;
 }
-article h1,
-article h2 {
+form h1,
+form h2 {
   text-shadow: 6px 4px 6px #000;
   margin: 0.2em;
 }
-article input {
+form input {
   width: 55%;
   margin-top: 1em;
   text-align: center;
   box-shadow: 6px 4px 6px #000;
 }
-article a {
+form input[type="submit"] {
   background: #fb1414 !important;
+  min-width: 360px;
   box-shadow: 6px 4px 6px #000 !important;
 }
 ul {
